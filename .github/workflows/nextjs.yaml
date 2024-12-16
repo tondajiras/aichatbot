@@ -78,7 +78,7 @@ jobs:
       - name: Set API_KEY environment variable
         run: echo "APIKEY=${{ secrets.APIKEY }}" >> $GITHUB_ENV
       - name: Check API_KEY
-        run: echo "APIKEY is set as: $APIKEY"
+        run: echo $APIKEY
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
