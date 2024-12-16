@@ -4,7 +4,7 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 const API_URL = "https://api.x.ai/v1/chat/completions";
-const API_KEY = process.env.NEXT_PUBLIC_APIKEY;
+const API_KEY = process.env.APIKEY;
 
 export default async function callGrokAPI(
   messages: Message[],
